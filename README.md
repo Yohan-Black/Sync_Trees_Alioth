@@ -6,7 +6,6 @@ Links and dependencies used to compile for Alioth
 
 	rm -rf device/xiaomi/alioth
     git clone https://github.com/Yohan-Black/device_xiaomi_alioth.git -b thirteen device/xiaomi/alioth
-
     rm -rf device/xiaomi/sm8250-common 
     git clone https://github.com/Yohan-Black/device_xiaomi_sm8250-common.git -b thirteen  device/xiaomi/sm8250-common 
 
@@ -15,14 +14,13 @@ Links and dependencies used to compile for Alioth
 
     rm -rf vendor/xiaomi/alioth
     git clone https://github.com/Yohan-Black/vendor_xiaomi_alioth.git vendor/xiaomi/alioth
-
 	rm -rf vendor/xiaomi/sm8250-common
 	git clone https://github.com/Yohan-Black/vendor_xiaomi_sm8250-common.git -b thirteen  vendor/xiaomi/sm8250-common
 	
 
 **Kernels**
 	
-    -----------------------N0 kernel-----------------	
+    -----------------------N0 kernel-----------------------
 
 	rm -rf kernel/xiaomi/sm8250    
 	git clone https://github.com/EmanuelCN/kernel_xiaomi_sm8250.git -b staging kernel/xiaomi/sm8250
@@ -30,7 +28,7 @@ Links and dependencies used to compile for Alioth
     
 **clang**
  
- 	--------------Clang Zyc-----------------------------------
+ 	-----------------------Clang Zyc-----------------------
     
 	rm -rf prebuilts/clang/host/linux-x86/clang-zyc
 	git clone https://gitlab.com/GhosutoX/zyc-clang16.git prebuilts/clang/host/linux-x86/clang-zyc
