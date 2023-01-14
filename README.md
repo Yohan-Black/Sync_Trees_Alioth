@@ -28,7 +28,7 @@ Links and dependencies used to compile for Alioth
  git clone https://github.com/EmanuelCN/kernel_xiaomi_sm8250.git -b staging kernel/xiaomi/sm8250
     
     
- **clang**
+**clang**
  
  	--------------Clang Zyc-----------------------------------
     
@@ -36,13 +36,13 @@ Links and dependencies used to compile for Alioth
  git clone https://gitlab.com/GhosutoX/zyc-clang16.git prebuilts/clang/host/linux-x86/clang-zyc
     
     
- **Xiaomi Harware**
+**Xiaomi Harware**
 
  rm -rf hardware/xiaomi
  https://github.com/Yohan-Black/hardware_xiaomi.git
 
 
- **HALS**
+**HALS**
 
  rm -rf vendor/qcom/opensource/audio-hal/st-hal
  git clone https://github.com/PixelExperience/vendor_qcom_opensource_audio-hal_st-hal vendor/qcom/opensource/audio-hal/st-hal
@@ -60,7 +60,7 @@ Links and dependencies used to compile for Alioth
  git clone https://github.com/VoidUI-Tiramisu/hardware_qcom-caf_sm8250_audio.git hardware/qcom-caf/sm8250/audio 
 
 
- **Source support to Import and adapt Xiaomi Proprietary vibrator hal, if the source does not have this support there will be no vibration on the device. also if the source does not support hal vibrator hal, it will terminate bootloop, check commits in device/common and revert**
+**Source support to Import and adapt Xiaomi Proprietary vibrator hal, if the source does not have this support there will be no vibration on the device. also if the source does not support hal vibrator hal, it will terminate bootloop, check commits in device/common and revert**
 
  cd frameworks/native
  git fetch https://github.com/VoidUI-Tiramisu/frameworks_native.git aosp-13-r13
