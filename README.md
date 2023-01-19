@@ -20,18 +20,17 @@ Links and dependencies used to compile for Alioth
 
 **Kernels**
 	
-    -----------------------N0 kernel-----------------------
+    -----------------------IMMENSITY FORK IVAN-----------------------
 
-	rm -rf kernel/xiaomi/sm8250    
-	git clone https://github.com/EmanuelCN/kernel_xiaomi_sm8250.git -b staging kernel/xiaomi/sm8250
+	rm -rf kernel/xiaomi/sm8250   
+	git clone https://github.com/VoidUI-Devices/kernel_xiaomi_sm8250.git kernel/xiaomi/sm8250
     
     
 **clang**
  
- 	-----------------------Clang Zyc-----------------------
+ 	-----------------------SD CLANG-----------------------
     
-	rm -rf prebuilts/clang/host/linux-x86/clang-zyc
-	git clone https://gitlab.com/GhosutoX/zyc-clang16.git prebuilts/clang/host/linux-x86/clang-zyc
+	git clone https://gitlab.com/VoidUI/snapdragon-clang.git prebuilts/clang/host/linux-x86/clang-sdclang
     
     
 **Xiaomi Hardware**
