@@ -26,12 +26,6 @@ Links and dependencies used to compile for Alioth
 	git clone https://github.com/VoidUI-Devices/kernel_xiaomi_sm8250.git kernel/xiaomi/sm8250
     
     
-**clang**
- 
- 	-----------------------SD CLANG-----------------------
-    
-	git clone https://gitlab.com/VoidUI/snapdragon-clang.git prebuilts/clang/host/linux-x86/clang-sdclang
-    
     
 **Xiaomi Hardware**
 
@@ -57,16 +51,3 @@ Links and dependencies used to compile for Alioth
 	git clone https://github.com/VoidUI-Tiramisu/hardware_qcom-caf_sm8250_audio.git hardware/qcom-caf/sm8250/audio 
 
 
-**Source support to Import and adapt Xiaomi Proprietary vibrator hal, if the source does not have this support there will be no vibration on the device.**
-
-	cd frameworks/native
-	git fetch https://github.com/VoidUI-Tiramisu/frameworks_native.git aosp-13-r13
-	git cherry-pick c771defb1c2c539a700cf14b784c6ea3580ce4ea
-	cd ..
-	cd ..
-
-**In cause of bootloop by vibrator hal**
-
-	cd device/xiaomi/sm8250-common
-	git revert 8e488cfe4b372cbb4a28b119d0c15ed707866b46  (https://github.com/PalyrimOS-Devices/device_xiaomi_sm8250-common/commit/8e488cfe4b372cbb4a28b119d0c15ed707866b46)
-	git revert 7a5a843f9bd87a331f689398bf28d1ca4c1e2a2c  (https://github.com/PalyrimOS-Devices/device_xiaomi_sm8250-common/commit/7a5a843f9bd87a331f689398bf28d1ca4c1e2a2c)
